@@ -3,22 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KN</title>
+<title>KN's Homepage</title>
 <style>
-    body { 
-        font-family: 'Courier New', monospace; /* Typewriter-style font */
-        background-color: #121212; /* Dark background */
-        color: #E0E0E0; /* Light text */
-        line-height: 1.4;
-        font-size: 16px;
-        padding: 0 10px;
-        margin: 50px auto;
-        max-width: 650px;
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: 'Courier New', monospace;
+        background-color: #121212;
+        color: #E0E0E0;
     }
-
-    #maincontent
-    {
-    max-width:42em; margin:15 auto;
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #maincontent {
+        flex: 1;
+        max-width: 40em;
+        margin: 15px auto;
+        padding: 0 10px;
     }
     .note {
         font-style: italic;
@@ -28,27 +31,47 @@
         text-decoration: none;
         color: inherit;
     }
-
     .no-underline:hover, .no-underline:focus {
         text-decoration: none;
     }
     .lists {
         margin-top: 0;
+        margin-bottom: 1em;
     }
     h3 {
         margin-bottom: 4px;
     }
     a, .username-container {
         display: flex;
-        align-items: center; /* Aligns the icon and the text vertically */
+        align-items: center;
     }
     .icon {
-        margin-right: 5px; /* Adds a small space between the icon and the text */
-        width: 50px; /* Adjusts the size of the icon */
+        margin-right: 5px;
+        width: 50px;
         height: auto;
     }
     a {
-        color: #4CAF50; /* Green links for better visibility in dark mode */
+        color: #4CAF50;
+    }
+    footer {
+        background-color: #2c2c2c;
+        color: #e0e0e0;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .left-content {
+        text-align: left;
+    }
+    .center-content {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    ul{
+        margin-bottom: 1em;
     }
 </style>
 </head>
@@ -56,39 +79,52 @@
 <body>
     <div id="maincontent" style="margin-top:70px">
         <h1>Konstantin Ntounas</h1>
-        <h2> CS Master's Student & Research Assistant @ KIT</h2>
+        <h2> CS Master's Student @ KIT</h2>
         <h3 class="username-container">
             <a href=https://github.com/theonetruekn><img src="github.png" alt "GitHub" class="icon"></a>
             <a href=https://www.linkedin.com/in/konstantin-nt><img src="linkedin.png" alt="LinkedIn" class="icon"></a>
         </h3>
         <div class="container">
+        <div class="lists">
             <h3>🔥 Interested in</h3>
-            <ul class="lists">
-                <li>Reinforcement Learning</li>
-                <li>LLMs</li>
-                <li>Embodied AI</li>
-                <li>Quantitative Finance</li>
-                <li>Ancient DNA</li>
+            <ul>
+                <li>Reinforcement Learning 🎮</li>
+                <li>LLMs 💬</li>
+                <li>XAI 🔬</li>
+                <li>Embodied AI 🤖</li>
+                <li>Quantitative Finance 📈</li>
+                <li>Ancient DNA 🧬</li>
                 <li>... and a lot more!</li>
+            </ul>
+        </div>
+        <div class="lists">
+            <h3>👨🏼‍🍳 Projects</h3>
+            <ul>
+                <li><a href="https://github.com/theonetruekn/interactive-learning">SmolCoder</a>
+                    <ul><li>an open source, locally runnable LLM-based Coding Agent</li></ul>
+                </li>
+                <li><a href="https://theonetruekn.github.io/RLDuels/">RLDuels</a>
+                    <ul><li>a framework for collecting Human Preferences for RL</li></ul>
+                </li>
+                <li><a href="https://github.com/theonetruekn/ReAct">ReAct (Reason+Act)</a>
+                    <ul><li>a framework for LLM agents</li></ul>
+                </li>
             </ul>
         </div>
         <div class="lists">
             <h3>🎓 Educational Content I made</h3>
             <ul>
-                <li><a href="https://correlationkn.streamlit.app">The Pitfalls of Correlation</a></li>
+                <li><a href="https://correlationkn.streamlit.app">The Pitfalls of Correlation</a>
+                    <ul><li>a small interactive web app that explains what correlation is,
+                        how one should use it and what to look out for to not bee fooled by it.</li></ul>
+                </li>
             </ul>
         </div>
-        <div class="lists">
-            <h3>👨🏼‍🍳 Currently cooking</h3>
-            <ul>
-                <li><a href="https://github.com/theonetruekn/ReAct">ReAct (Reason+Act) - a framework for agentic LLMs</a></li>
-                <li><a href="https://theonetruekn.github.io/RLDuels/">RLDuels</a></li>
-                <li>A minimal LLM-based coding agent (source code coming soon)</li>
-            </ul>
-        </div>
-        <footer>
-            Thanks for reading.
-        </footer>
     </div>
+</div>
 </body>
+<footer>
+    <div class="left-content">© Konstantin</div>
+    <div class="center-content">Thanks for reading.</div>
+</footer>
 </html>
