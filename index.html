@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KN's Homepage</title>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: 'Courier New', monospace;
+        background-color: #121212;
+        color: #E0E0E0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #maincontent {
+        flex: 1;
+        max-width: 40em;
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+    .note {
+        font-style: italic;
+        font-size: 0.9em;
+    }
+    .no-underline:link, .no-underline:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+    .no-underline:hover, .no-underline:focus {
+        text-decoration: none;
+    }
+    .lists {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    h3 {
+        margin-bottom: 4px;
+    }
+    a, .username-container {
+        display: flex;
+        align-items: center;
+    }
+    .icon {
+        margin-right: 5px;
+        width: 50px;
+        height: auto;
+    }
+    a {
+        color: #4CAF50;
+    }
+    footer {
+        background-color: #2c2c2c;
+        color: #e0e0e0;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .left-content {
+        text-align: left;
+    }
+    .center-content {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    ul{
+        margin-bottom: 1em;
+    }
+</style>
+</head>
+
+<body>
+    <div id="maincontent" style="margin-top:70px">
+        <h1>Konstantin</h1>
+        <h2> AGI Enthusiast & CS Student</h2>
+        <h3 class="username-container">
+            <a href=https://github.com/theonetruekn><img src="github.png" alt "GitHub" class="icon"></a>
+            <a href=https://www.linkedin.com/in/konstantin-nt><img src="linkedin.png" alt="LinkedIn" class="icon"></a>
+        </h3>
+        <div class="container">
+        <div class="lists">
+            <h3>👨🏼‍🍳 Projects</h3>
+            <ul>
+                <li><a href="https://github.com/theonetruekn/interactive-learning">SmolCoder</a>
+                    <ul>
+                        <li>an open source, locally runnable LLM-based Coding Agent</li>
+                        <li>the goal of this project is to take a small llm and increase its capabilities in the domain of codegen</li>
+                    </ul>
+                </li>
+                <li><a href="https://theonetruekn.github.io/RLDuels/">RLDuels</a>
+                    <ul><li>a framework for collecting Human Preferences for RL</li></ul>
+                </li>
+                <li><a href="https://github.com/theonetruekn/ReAct">ReAct (Reason+Act)</a>
+                    <ul><li>a framework for LLM agents</li></ul>
+                </li>
+            </ul>
+        </div>
+        <div class="lists">
+            <h3>🎓 Educational Content</h3>
+            <ul>
+                <li>
+                    <a href="https://correlationkn.streamlit.app">The Pitfalls of Correlation</a>
+                    <ul>
+                        <li>a small interactive web app that explains what correlation is,
+                        how one should use it and what to look out for to not be fooled by it.</li>
+                    </ul>
+                </li>
+                <li>I curate a small blog where I publish ideas, which can be found <a href="placeholder.com">here</a></li>
+            </ul>
+        </div>
+        <div class="lists">
+            <h3>🔥 Generally interested in</h3>
+            <ul>
+                <li>Combining Reinforcement Learning 🎮</li>
+                <li>LLMs 💬</li>
+                <li>XAI 🔬</li>
+                <li>Epistemology / Philosophy of Science</li>
+                <li>Quantitative Finance 📈</li>
+                <li>... and a lot more!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="left-content">© Konstantin</div>
+    <div class="center-content">Thanks for reading.</div>
+</footer>
+</html>
